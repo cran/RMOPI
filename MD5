@@ -1,11 +1,11 @@
-7f483a40e036daf140577234cc6021d1 *DESCRIPTION
+cccfc9d794c090082e071278fbece5a7 *DESCRIPTION
 4bbd01f7b15566cae705e759b268c72a *NAMESPACE
 4adaa22614f7e12e668a8a5a9ed0e710 *R/backtest.R
-1e92b2869a955c0a3176716295650306 *R/cos.R
+02bec8cc2698843f045dc9deabd6dc50 *R/cos.R
 1e13f904f762051ba1065889a3414e30 *R/describe.R
 5b097283add6e7285ef31d049d8be7a1 *R/ggacf.R
 67d32ef2ed5176bce02aed7068db9b09 *R/ggbox.R
-c046b55f121094d6b5db3cd702df5504 *R/ggplot.R
+c9d34eea7ebf9c8dc590d4b758be6072 *R/ggplot.R
 98980abc39f7740b71b5e65da14f1cd5 *R/investport.R
 d44cdaa26fb5a6c8fab78c651a657fe8 *R/rgarch.R
 cb0e0d464b61f677e37774992cc90743 *R/rgbm.R
@@ -34,8 +34,8 @@ acda12d1cb2dac7cce5f5f2806006408 *man/StackForPlot.Rd
 6d2f9ae442244344b7fe4d6bd6797b94 *man/VaRSimTest.Rd
 291c41363f9548ecf88257c6c786fc61 *man/ggacf.Rd
 2066f9917cef2bc208cd82d3465d92bf *man/ggboxplot.Rd
-8e0e586a8e22171000aa89febee774ff *man/gghistplot.Rd
-07f2738a46e6562f259fb58790a4308d *man/gglineplot.Rd
+ee57f6c42cd1e1ccd6b433c96b8c7bdc *man/gghistplot.Rd
+150c41a61e9bba977cd3aa8686919cf6 *man/gglineplot.Rd
 563225127e75a71b9c70e71a5bcce6d4 *man/ggpacf.Rd
 2c81378d2a3fd5914de8a052f800d6a4 *man/rGarch.Rd
 fddd9b202bf4976b8dd4f40627d7e32a *man/rGarcha.Rd

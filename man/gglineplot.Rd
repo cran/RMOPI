@@ -4,14 +4,12 @@
 \alias{gglineplot}
 \title{Plot the Time Series}
 \usage{
-gglineplot(data, x, y, date_labels = "\%Y/\%m/\%d", date_breaks = "2 weeks")
+gglineplot(data, mapping, date_labels = "\%Y/\%m/\%d", date_breaks = "2 weeks")
 }
 \arguments{
 \item{data}{a tibble}
 
-\item{x}{x}
-
-\item{y}{y}
+\item{mapping}{the mapping parameter}
 
 \item{date_labels}{the x label}
 

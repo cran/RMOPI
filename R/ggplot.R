@@ -3,8 +3,7 @@
 #' Plot the time series data beautifully with ggplot.
 #'
 #' @param data a tibble
-#' @param x x
-#' @param y y
+#' @param mapping the mapping parameter
 #' @param date_labels the x label
 #' @param date_breaks the period of the x label
 #'
@@ -18,8 +17,8 @@
 #' thero <- returns(rGbm("thero", date))[-1]
 #' tthero <- tibble(x = date[-1], y = thero)
 #' gglineplot(tthero, aes(x, y), "%Y/%m", "1 months")
-gglineplot <- function(data, x, y, date_labels = "%Y/%m/%d", date_breaks = "2 weeks") {
-  gg <- ggplot(data = data, mapping = aes(x, y)) +
+gglineplot <- function(data, mapping, date_labels = "%Y/%m/%d", date_breaks = "2 weeks") {
+  gg <- ggplot(data = data, mapping = mapping) +
     geom_line(color = "steelblue") +
     geom_point(shape = 2, color = "red") +
     scale_x_date(date_labels = date_labels, date_breaks = date_breaks) +
@@ -35,7 +34,7 @@ gglineplot <- function(data, x, y, date_labels = "%Y/%m/%d", date_breaks = "2 we
 #' Plot the histgram figure beautifully with ggplot.
 #'
 #' @param data a tibble
-#' @param x x
+#' @param mapping the mapping parameter
 #' @param bins the number of bins
 #'
 #' @importFrom stats density
@@ -50,8 +49,8 @@ gglineplot <- function(data, x, y, date_labels = "%Y/%m/%d", date_breaks = "2 we
 #' thero <- returns(rGbm("thero", date))[-1]
 #' tthero <- tibble(x = date[-1], y = thero)
 #' gghistplot(tthero, aes(x = thero, y = stat(density)), bins = 20)
-gghistplot <- function(data, x, bins = 10) {
-  ggplot(data = data, mapping = aes(x = x, y = stat(density))) +
+gghistplot <- function(data, mapping, bins = 10) {
+  ggplot(data = data, mapping =  mapping)+
     geom_histogram(bins = bins, fill = "steelblue") +
     geom_density(color = "red") +
     theme_bw() +

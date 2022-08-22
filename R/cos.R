@@ -151,7 +151,7 @@ CosPdfMulti <- function(x, Chf, N, a, b) {
       f_x[, kk] <- CosPdfRecovery(x, Chf, N, a[kk], b[kk])
     }
   } else {
-    warning("erorr on N,a or b!")
+    warning("erorr on N, a or b!")
     f_x <- NULL
   }
   return(f_x)

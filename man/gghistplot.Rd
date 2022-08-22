@@ -4,12 +4,12 @@
 \alias{gghistplot}
 \title{Plot the Histogram Figure}
 \usage{
-gghistplot(data, x, bins = 10)
+gghistplot(data, mapping, bins = 10)
 }
 \arguments{
 \item{data}{a tibble}
 
-\item{x}{x}
+\item{mapping}{the mapping parameter}
 
 \item{bins}{the number of bins}
 }
